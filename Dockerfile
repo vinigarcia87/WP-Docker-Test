@@ -1,6 +1,3 @@
-FROM ubuntu:latest
+FROM wordpress:latest
 
-COPY README.md /README.md
-
-RUN apt-get update && \
-    apt-get -y install nano curl git
+COPY info.php /usr/src/wordpress/info.php
